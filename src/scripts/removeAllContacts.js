@@ -5,7 +5,6 @@ export const removeAllContacts = async () => {
     try {
         const data = await fs.readFile(PATH_DB, 'utf8');
         const contacts = JSON.parse(data);
-        console.log(contacts);
         
         const updateContacts = [];
 
